@@ -1,8 +1,11 @@
-import { Title, TimeImage, TimeWrapper, Description } from "../styles.js";
+import { Title, TimeImage, TimeWrapper, Description, Date } from "../styles.js";
 const TimelineItem = (props) => {
   return (
     <TimeWrapper>
-      <Title>{props.lines.title}</Title>
+      <div clas>
+        <Title>{props.lines.title}</Title>
+        <Date>{props.lines.date}</Date>
+      </div>
       <TimeImage src={props.lines.image} />
       <Description>{props.lines.paragraph}</Description>
     </TimeWrapper>
